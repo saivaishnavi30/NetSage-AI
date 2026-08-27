@@ -1,0 +1,6 @@
+case_id,issue_type,ai_diagnosis,human_decision,human_correction,reason
+CASE003,VLAN,"Likely VLAN trunk issue; VLAN 30 may not be allowed","Edited","Added that VLAN 30 is specifically missing from the trunk allowed list","Human reviewer confirmed the show interfaces trunk evidence"
+CASE008,DHCP,"Likely DHCP server or relay problem","Edited","Confirmed missing DHCP relay configuration is the primary suspected cause","APIPA address alone does not prove the exact relay failure"
+CASE017,Routing,"OSPF neighbor configuration issue","Edited","Specified that the connecting network is missing from OSPF configuration","Human reviewer verified the topology and OSPF evidence"
+CASE021,ACL,"Possible guest isolation problem","Edited","Confirmed missing ACL restriction allows guest-to-internal traffic","Security impact requires explicit human confirmation"
+CASE026,NAT,"NAT configuration may be incorrect","Edited","Identified missing default route as the primary issue","NAT translations exist, so NAT itself is not necessarily the failure"

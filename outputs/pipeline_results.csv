@@ -1,0 +1,31 @@
+case_id,issue_type,severity,symptom,expected_fault,osi_layer,concept,rule_findings,rule_problem_count,ai_status,human_reviewed,human_decision,human_correction
+CASE001,VLAN,High,PC in VLAN 10 cannot communicate with another PC in VLAN 10,VLAN 10 is not created on the switch,Layer 2,VLAN configuration,[],0,PENDING,False,,
+CASE002,VLAN,High,PC receives an IP but cannot reach devices in its VLAN,Access port is assigned to the wrong VLAN,Layer 2,Access VLAN assignment,[],0,PENDING,False,,
+CASE003,VLAN,High,Users on one switch cannot reach users on another switch in the same VLAN,VLAN 30 is missing from the trunk allowed list,Layer 2,802.1Q trunking,[],0,PENDING,True,Edited,Added that VLAN 30 is specifically missing from the trunk allowed list
+CASE004,VLAN,High,Inter-VLAN communication fails for VLAN 40 users,Switch-router link is not configured as a trunk,Layer 2,Inter-VLAN trunking,[],0,PENDING,False,,
+CASE005,Gateway,High,PC can communicate locally but cannot reach remote networks,PC has an incorrect default gateway,Layer 3,Default gateway,[],0,PENDING,False,,
+CASE006,Gateway,High,PC has valid IP but cannot ping its router gateway,Gateway address does not match the local subnet,Layer 3,Gateway addressing,[],0,PENDING,False,,
+CASE007,Gateway,Critical,Multiple PCs in the same subnet cannot reach the gateway,Router gateway interface is shut down,Layer 3,Router interface state,['Interface-down condition detected'],1,PENDING,False,,
+CASE008,DHCP,High,PC automatically receives an APIPA address,DHCP requests are not reaching the remote DHCP server,Layer 3,DHCP relay,[],0,PENDING,True,Edited,Confirmed missing DHCP relay configuration is the primary suspected cause
+CASE009,DHCP,High,PC receives an address from the wrong subnet,DHCP pool/network configuration is incorrect,Layer 3,DHCP scope,[],0,PENDING,False,,
+CASE010,DHCP,Medium,Some clients receive addresses while others fail,DHCP address pool has no available leases,Layer 3,DHCP address allocation,[],0,PENDING,False,,
+CASE011,DHCP,Medium,PC has IP address but DNS server information is missing,DHCP pool does not provide a DNS server option,Layer 7,DHCP options,[],0,PENDING,False,,
+CASE012,DNS,High,PC can ping a web server by IP but not by hostname,DNS server is unreachable or unavailable,Layer 7,DNS resolution,[],0,PENDING,False,,
+CASE013,DNS,Medium,Only one hostname fails while other domains resolve,DNS record for the requested hostname is missing,Layer 7,DNS records,[],0,PENDING,False,,
+CASE014,DNS,High,Clients cannot resolve any hostnames after DNS server change,Client cannot reach the configured DNS server,Layer 7,DNS connectivity,[],0,PENDING,False,,
+CASE015,Routing,High,PC can reach its gateway but not a remote LAN,R1 is missing a route to the remote network,Layer 3,Static routing,['Possible missing route'],1,PENDING,False,,
+CASE016,Routing,High,Remote network is reachable from one router but not from another,Return route is missing on R2,Layer 3,Routing table,[],0,PENDING,False,,
+CASE017,Routing,High,OSPF neighbors are not forming,OSPF configuration does not include the connecting network,Layer 3,OSPF,[],0,PENDING,True,Edited,Specified that the connecting network is missing from OSPF configuration
+CASE018,Routing,Medium,Traffic follows an unexpected path,Routing metric or route preference causes a different path,Layer 3,Dynamic routing,[],0,PENDING,False,,
+CASE019,Routing,High,Default route is configured but internet network remains unreachable,Default route is missing,Layer 3,Default routing,[],0,PENDING,False,,
+CASE020,ACL,High,PC can ping gateway but cannot access application server,ACL explicitly blocks HTTPS traffic,Layer 4,Access Control List,[],0,PENDING,False,,
+CASE021,ACL,Critical,Guest users can access internal server,Guest isolation ACL rule is missing,Layer 3/4,Network segmentation,[],0,PENDING,True,Edited,Confirmed missing ACL restriction allows guest-to-internal traffic
+CASE022,ACL,High,SSH access to router is blocked for administrators,ACL blocks the management subnet,Layer 4,Management ACL,[],0,PENDING,False,,
+CASE023,ACL,Medium,Web application works but ping fails,ICMP is blocked by ACL while TCP traffic remains allowed,Layer 3,ICMP filtering,[],0,PENDING,False,,
+CASE024,NAT,Critical,Internal PC can reach gateway but cannot reach internet,NAT configuration is missing or not applied,Layer 3,NAT/PAT,[],0,PENDING,False,,
+CASE025,NAT,High,Only one internal host can access the internet,PAT overload is not configured correctly,Layer 3,PAT overload,[],0,PENDING,False,,
+CASE026,NAT,High,NAT translations exist but internet replies never return,Router lacks a route toward the ISP,Layer 3,NAT with routing,[],0,PENDING,True,Edited,Identified missing default route as the primary issue
+CASE027,Wireless,High,Wireless clients connect to Wi-Fi but receive no IP address,Wireless client VLAN is not configured on the switch,Layer 2,Wireless VLAN,[],0,PENDING,False,,
+CASE028,Wireless,High,Guest Wi-Fi connects but cannot reach the internet,Guest VLAN is not carried across the trunk,Layer 2,SSID/VLAN mapping,[],0,PENDING,False,,
+CASE029,Wireless,Medium,Wireless client repeatedly disconnects,Wireless channel interference is causing instability,Layer 1/2,Wireless interference,[],0,PENDING,False,,
+CASE030,Wireless,High,Wireless client connects but cannot reach internal resources,Corporate SSID is mapped to the wrong VLAN,Layer 2,SSID segmentation,[],0,PENDING,False,,
