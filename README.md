@@ -44,7 +44,6 @@ The system then:
 
 ## Project Workflow
 
-```text
 Network Case
      ↓
 Network Evidence
