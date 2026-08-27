@@ -30,7 +30,6 @@ The system then:
 ## Main Features
 
 - 30 predefined network troubleshooting cases
-- Cisco-style networking scenarios
 - VLAN, Gateway, DHCP, DNS, Routing, ACL, NAT and other issues
 - Rule-based network checking
 - AI-assisted diagnosis
@@ -44,6 +43,7 @@ The system then:
 
 ## Project Workflow
 
+```text
 Network Case
      ↓
 Network Evidence
@@ -57,3 +57,7 @@ Human Review
 Correction / Approval
      ↓
 Verification
+
+## Demo Video
+
+[▶️ Watch the NetSage AI Demo]()
