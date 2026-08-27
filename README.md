@@ -61,10 +61,6 @@ Verification
 
 ## Demo Video
 
-### Demo 1
+[▶️ Watch Demo Video 1](./1%20%281%29.mp4)
 
-<video src="./1%20%281%29.mp4" controls width="800"></video>
-
-### Demo 2
-
-<video src="./2%20%281%29%20%281%29.mp4" controls width="800"></video>
+[▶️ Watch Demo Video 2](./2%20%281%29%20%281%29.mp4)
