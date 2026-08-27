@@ -57,7 +57,3 @@ Human Review
 Correction / Approval
      ↓
 Verification
-
-## Demo Video
-
-[▶️ Watch the NetSage AI Demo]()
