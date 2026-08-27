@@ -59,8 +59,3 @@ Correction / Approval
 Verification
 ```
 
-## Demo Video
-
-[▶️ Watch Demo Video 1](./1%20%281%29.mp4)
-
-[▶️ Watch Demo Video 2](./2%20%281%29%20%281%29.mp4)
