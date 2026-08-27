@@ -59,12 +59,12 @@ Correction / Approval
 Verification
 ```
 
-## Demo Videos
+## Demo Video
 
 ### Demo 1
 
-[▶️ Watch Demo 1](./1%20%281%29.mp4)
+<video src="./1%20%281%29.mp4" controls width="800"></video>
 
 ### Demo 2
 
-[▶️ Watch Demo 2](./2%20%281%29%20%281%29.mp4)
+<video src="./2%20%281%29%20%281%29.mp4" controls width="800"></video>
