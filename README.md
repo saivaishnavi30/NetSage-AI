@@ -57,3 +57,14 @@ Human Review
 Correction / Approval
      ↓
 Verification
+```
+
+## Demo Videos
+
+### Demo 1
+
+[▶️ Watch Demo 1](./1%20%281%29.mp4)
+
+### Demo 2
+
+[▶️ Watch Demo 2](./2%20%281%29%20%281%29.mp4)
