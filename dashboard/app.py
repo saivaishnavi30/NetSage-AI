@@ -6,9 +6,8 @@ import streamlit as st
 from dotenv import load_dotenv
 from google import genai
 
-# --------------------------------------------------
 # Configuration
-# --------------------------------------------------
+
 
 st.set_page_config(
     page_title="NetSage AI",
